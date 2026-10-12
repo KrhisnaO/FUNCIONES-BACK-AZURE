@@ -1,0 +1,16 @@
+{
+  "scriptFile" : "../funciones-backend-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.duoc.cloud.RolesGraphQLFunction.run",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "route" : "graphql/roles",
+    "methods" : [ "POST" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}
